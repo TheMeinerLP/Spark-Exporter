@@ -1,0 +1,17 @@
+services:
+  grafana:
+    container_name: grafana
+    links:
+      - influxdb
+    ports:
+      - 3000:3000
+    image: grafana/grafana
+  influxdb:
+    container_name: influxdb
+    ports:
+      - 8086:8086
+    volumes:
+      - ./influxdb:/var/lib/influxdb2
+    image: influxdb:latest
+# password: admin123
+# username: admin
