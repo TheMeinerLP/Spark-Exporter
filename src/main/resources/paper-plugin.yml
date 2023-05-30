@@ -1,0 +1,11 @@
+name: 'SparkExporter'
+version: '$VERSION$'
+main: dev.themeinerlp.sparkexporter.SparkExporter
+description: Export Spark Metrics into InfluxDB v2
+api-version: '1.19'
+dependencies:
+  - name: spark
+    required: true
+load-after:
+  - name: spark
+    bootstrap: false

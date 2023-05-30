@@ -1,0 +1,6 @@
+influx:
+  v2:
+    url: 'http://127.0.0.1:8086'
+    org: 'test'
+    token: 'Mfkvf9Zx-PEw7IHxFN3i8KNigq7dP8BN1WmnsVwjV4GbvKppGkhS8Xk0S9ct3R984Wb3Ht2UKpp0UwRBa0ESBQ=='
+    bucket: 'spark'
